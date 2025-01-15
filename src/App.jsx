@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './Components/Home/Home';
 import PropertyListing from './Components/Listproperty/Listproperty';
+import Filter from './Components/Filter/Filter';
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
     
         <Route path="/" element={<Home />} />
         <Route path="/list-property" element={<PropertyListing />} />
-
+        <Route path="/filter" element={<Filter />} />
 
       </Routes>
     </Router>

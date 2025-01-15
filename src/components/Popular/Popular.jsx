@@ -52,7 +52,7 @@ const PopularOwnerProperties = () => {
       Popular Owner Properties
     </h2>
     <a
-      href="#"
+      href="/filter"
       className="text-black text-sm md:text-base font-medium hover:underline"
     >
       See all Properties &rarr;

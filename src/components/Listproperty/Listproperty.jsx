@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FileUp, Phone, FileSignature, ThumbsUp } from "lucide-react";
+import Filter from "../Filter/Filter";
 
 const PropertyListing = () => {
   const stats = [
@@ -187,6 +188,7 @@ const PropertyListing = () => {
           ))}
         </div>
       </div>
+      <Filter/>
     </div>
   );
 };
