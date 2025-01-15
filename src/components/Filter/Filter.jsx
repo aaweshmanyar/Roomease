@@ -9,7 +9,7 @@ const Filter = () => {
       <header className="border-b bg-white">
         <div className="container mx-auto flex items-center justify-between p-4">
           <Link to="/" className="text-2xl font-bold text-black">
-            Zolo
+            Roomease
           </Link>
           <div className="flex flex-1 items-center gap-2 px-8">
             <MapPin className="text-black" />
