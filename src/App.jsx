@@ -1,15 +1,22 @@
-// App.js
 import React from 'react';
-import Home from './components/Home/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Home from './Components/Home/Home';
+import PropertyListing from './Components/Listproperty/Listproperty';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="font-sans">
-      <Home />
-      
-    </div>
+    <Router>
+      <Routes>
+    
+        <Route path="/" element={<Home />} />
+        <Route path="/list-property" element={<PropertyListing />} />
+
+
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
