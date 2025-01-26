@@ -1,36 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Heart, MapPin, Search } from "lucide-react";
+import image1 from '../../assets/room/1.jpeg';
+import image2 from '../../assets/room/2.jpeg';
+import image3 from '../../assets/room/3.jpeg';
+import image4 from '../../assets/room/4.jpeg';
 
 const Filter = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="border-b bg-white">
-        <div className="container mx-auto flex items-center justify-between p-4">
+        <div className="container mx-auto flex flex-wrap items-center justify-between gap-4 p-4">
           <Link to="/" className="text-2xl font-bold text-black">
             Roomease
           </Link>
-          <div className="flex flex-1 items-center gap-2 px-8">
-            <MapPin className="text-black" />
+          <div className="relative flex w-full flex-1 items-center lg:w-auto">
+            <MapPin className="text-black absolute left-3 top-1/2 transform -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Where do you want to stay? Search for Zolo's, Cities, Offices, Locations..."
-              className="w-full max-w-2xl rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500 text-black"
+              placeholder="Where do you want to stay? Search for Roomease's, Cities, Offices, Locations..."
+              className="w-full rounded border border-gray-300 pl-10 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500 text-black lg:max-w-2xl"
             />
-            <button className="p-2 text-black hover:text-sky-500">
-              <Search className="h-4 w-4" />
+            <button className="absolute right-3 lg:right-auto lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:left-[calc(100%-3rem)] p-2 text-black">
+              <Search className="h-6 w-6" />
             </button>
           </div>
-          <button className="border border-black px-4 py-2 text-black hover:bg-black hover:text-white">
+          <button className="mt-2 border bg-black border-black px-4 py-2 text-white rounded-md hover:bg-black hover:text-white lg:mt-0">
             LOGIN / SIGN UP
           </button>
         </div>
       </header>
 
-      <div className="container mx-auto mt-4 flex gap-8 p-4">
+      <div className="container mx-auto mt-4 flex flex-wrap gap-8 p-4">
         {/* Filters Sidebar */}
-        <div className="w-64 shrink-0">
+        <div className="w-full lg:w-64 shrink-0">
           <div className="rounded-lg border bg-white p-4">
             <h2 className="mb-4 text-lg font-semibold text-black">Filters</h2>
             <div className="space-y-6">
@@ -129,28 +133,26 @@ const Filter = () => {
           <div className="mb-8 overflow-hidden rounded-lg bg-amber-200">
             <div className="p-8">
               <h2 className="mb-2 text-4xl font-bold text-black">Stress-Free Life</h2>
-              <p className="text-xl text-black">Come to Zolo and we'll take care of the rest!</p>
+              <p className="text-xl text-black">Come to Roomease and we'll take care of the rest!</p>
             </div>
           </div>
 
           {/* Property Grid */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { name: "Zolo Wisdom", location: "PG in Phursungi", type: "UNISEX" },
-              { name: "Zolo Azure", location: "PG in Keshav Nagar", type: "UNISEX" },
-              { name: "Zolo Mount View", location: "PG in Hinjewadi Phase 3", type: "MEN'S" },
-              { name: "Zolo Braavos", location: "PG in Hinjewadi Phase 1", type: "UNISEX" },
+              { name: " Wisdom", location: "PG in Phursungi", type: "UNISEX", image: image1, },
+              { name: " Azure", location: "PG in Keshav Nagar", type: "UNISEX", image: image2, },
+              { name: " Mount View", location: "PG in Hinjewadi Phase 3", type: "MEN'S", image: image3, },
+              { name: " Braavos", location: "PG in Hinjewadi Phase 1", type: "UNISEX", image: image4, },
             ].map((property, index) => (
               <div key={index} className="overflow-hidden rounded-lg border bg-white">
                 <div className="relative">
                   <img
-                    src="/placeholder.svg"
+                    src={property.image}
                     alt={property.name}
-                    className="h-48 w-full object-cover"
+                    className="h-full w-full object-cover position-center"
                   />
-                  <button
-                    className="absolute right-2 top-2 p-1 text-black hover:text-white"
-                  >
+                  <button className="absolute right-2 top-2 p-1 text-black hover:text-black">
                     <Heart className="h-5 w-5" />
                   </button>
                   {index === 0 && (

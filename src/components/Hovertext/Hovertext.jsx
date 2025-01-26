@@ -7,8 +7,7 @@ const HoverTextEffect = () => {
         {/* Default Text */}
         <div className="absolute inset-0 flex items-center justify-center transform transition-transform duration-500 group-hover:-translate-y-full">
           <p className="text-white text-lg font-medium">
-            Are you alone? and looking to share your room?
-          </p>
+          Now Landlords can contact tenants directly!          </p>
         </div>
         {/* Hover Text */}
         <div className="absolute inset-0 flex items-center justify-center transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
@@ -16,7 +15,7 @@ const HoverTextEffect = () => {
             href="/find-roommate"
             className="flex items-center gap-2 text-white text-lg font-medium hover:text-gray-500 transition-colors duration-300"
           >
-            <span>Find Roommate</span>
+            <span>Find Tenants </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

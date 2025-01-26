@@ -2,7 +2,8 @@
 
 import React from "react";
 import { FileUp, Phone, FileSignature, ThumbsUp } from "lucide-react";
-import Filter from "../Filter/Filter";
+import Footer from "../Footer/Footer";
+
 
 const PropertyListing = () => {
   const stats = [
@@ -49,9 +50,48 @@ const PropertyListing = () => {
         List Your <span className="text-blue-600">Property</span>
       </h1>
 
-      {/* Steps Section */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <div className="space-y-12">
+      {/* Steps and Form Section */}
+      <div className="grid lg:grid-cols-3 gap-12">
+        {/* Form Section */}
+        <div className="bg-white p-8 rounded-lg shadow-lg w-full lg:col-span-1">
+          <h2 className="text-2xl font-medium mb-4 text-gray-800">Interested?</h2>
+          <p className="text-gray-600 mb-6">
+            Request a callback from us or call us on{" "}
+            <a
+              href="tel:+919900885777"
+              className="text-blue-600 hover:underline"
+            >
+              +91 95XXXXXXXX
+            </a>
+          </p>
+
+          <form className="space-y-5">
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="text"
+              placeholder="Enter City Name"
+              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="number"
+              placeholder="Number of Rooms"
+              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="submit"
+              className="w-full py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+
+        {/* Steps Section */}
+        <div className="space-y-12 lg:col-span-2">
           <div className="flex gap-6 items-start">
             <div className="bg-blue-100 p-4 rounded-full shadow-md">
               <FileUp className="w-10 h-10 text-blue-600" />
@@ -101,46 +141,6 @@ const PropertyListing = () => {
             </div>
           </div>
         </div>
-
-        {/* Form Section */}
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full md:w-9/12 lg:w-full mx-auto">
-          <h2 className="text-2xl font-medium mb-4 text-gray-800">
-            Interested?
-          </h2>
-          <p className="text-gray-600 mb-6">
-            Request a callback from us or call us on{" "}
-            <a
-              href="tel:+919900885777"
-              className="text-blue-600 hover:underline"
-            >
-              +91 95XXXXXXXX
-            </a>
-          </p>
-
-          <form className="space-y-5">
-            <input
-              type="tel"
-              placeholder="Mobile Number"
-              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="text"
-              placeholder="Enter City Name"
-              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="number"
-              placeholder="Number of Rooms"
-              className="w-full px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              className="w-full py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              Send
-            </button>
-          </form>
-        </div>
       </div>
 
       {/* Testimonials Section */}
@@ -188,7 +188,7 @@ const PropertyListing = () => {
           ))}
         </div>
       </div>
-      <Filter/>
+   <Footer/>
     </div>
   );
 };

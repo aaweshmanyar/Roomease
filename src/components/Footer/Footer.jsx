@@ -70,19 +70,19 @@ const Footer = () => {
           </p>
           <div className="flex mt-4 space-x-4">
             <a
-              href="#"
+              href="https://www.facebook.com/Shoolinconsultancy/"
               className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-500 hover:text-white transition"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/shoolin_consultancy/"
               className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-500 hover:text-white transition"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/shoolin-consultancy/"
               className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-500 hover:text-white transition"
             >
               <i className="fab fa-linkedin-in"></i>

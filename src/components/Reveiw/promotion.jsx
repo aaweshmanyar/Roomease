@@ -2,7 +2,7 @@ import React from "react";
 
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import "./promotion.css";
-
+import testimonialimg from '../../assets/Images/testimonial.jpg'
 const Promotions = () => {
   return (
     <>
@@ -16,10 +16,10 @@ const Promotions = () => {
           <div className="post-slider bg-gradient-to-r from-green to-white rounded-md ">
             {/* Header card (title and sponsor information) */}
             <div
-              className="post-slider-header header-card bg-cover bg-no-repeat"
-              style={{ backgroundImage: `url("https://aadiyogacenterphuket.com/assets/yogaclass-DnLgYTon.jpg")` }}
+              className="post-slider-header header-card bg-cover bg-no-repeat bg-center"
+              style={{ backgroundImage: `url(${testimonialimg})` }} 
             >
-              <h2 className="header-card-title bg-white text-green mb-[130px] ">
+              {/* <h2 className="header-card-title bg-black text-green mb-[130px] ">
                 Promotion Plan
               </h2>
               <p className="header-card-sponsor bg-white text-green mb-2 px-2 py-2">
@@ -33,7 +33,7 @@ const Promotions = () => {
               </p>
               <p className="header-card-sponsor bg-white text-green mb-2 px-2 py-2">
               See Review {'\u21AA'}
-              </p>
+              </p> */}
             </div>
             {/* Grid layout for mini cards (articles) */}
             <div className="mini-card-grid ">
@@ -48,8 +48,7 @@ const Promotions = () => {
 
                 {/* Short description of the article */}
                 <div className="mini-card-description text-green">
-                My start of the day with a healthy yoga session with Master Adi . Stretching ,good breathing,activation of my muscles and relaxation of my body and mind. It is really invigorating time. God bless 🙏
-                </div>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quos ullam quo eaque alias tempora quam, ipsam beatae quas molestias velit facere, autem odit dolorum non aspernatur quis aliquid dolorem.                </div>
 
                 {/* Author information for the article */}
                 <div className="author-row">
@@ -82,8 +81,7 @@ const Promotions = () => {
 
                 {/* Short description of the article */}
                 <div className="mini-card-description text-green">
-                One of the best yoga centres you will ever find. Aadi is truely a yoga master and whatever your experience, he will guide you through it
-                </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat aut consequatur porro officia quaerat dignissimos, suscipit corrupti dolore beatae quidem voluptatem temporibus non, illo a voluptates cum sequi. Amet?                </div>
 
                 {/* Author information for the article */}
                 <div className="author-row">
@@ -119,8 +117,7 @@ const Promotions = () => {
                 </h3> */}
 
                 <div className="mini-card-description">
-                Very good place to practice yoga, calm, relaxing, convenient to training yoga .The teacher is kind and experienced, and the fellow yoga practitioners are cute.
-                </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque debitis natus perferendis, expedita, ad totam et, ipsum maxime ducimus voluptate aut veritatis. Exercitationem aliquam atque dolorem consequuntur modi harum.                </div>
 
                 <div className="author-row">
                   <div>
@@ -145,8 +142,7 @@ const Promotions = () => {
                 {/* <h3 className="mini-card-title">Advanced Selectors in CSS</h3> */}
 
                 <div className="mini-card-description">
-                Very convenient location, near Benchakitti Park, near BTS station.   Experienced teacher who is  sincere and very helpful.  Nice  and clean studio.
-                </div>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem temporibus, soluta sunt dolor veniam sint laudantium a distinctio laborum quas sed velit numquam modi aperiam, sequi fugiat totam fuga beatae.                </div>
 
                 <div className="author-row">
                   <div>
@@ -168,8 +164,7 @@ const Promotions = () => {
                 {/* <h3 className="mini-card-title">Advanced Selectors in CSS</h3> */}
 
                 <div className="mini-card-description">
-                Very convenient location, near Benchakitti Park, near BTS station.   Experienced teacher who is  sincere and very helpful.  Nice  and clean studio.
-                </div>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore commodi itaque iusto harum consectetur quam recusandae sed excepturi nihil dicta minus at, delectus saepe reprehenderit architecto doloremque mollitia in. Ad.                </div>
 
                 <div className="author-row">
                   <div>
@@ -191,8 +186,7 @@ const Promotions = () => {
                 {/* <h3 className="mini-card-title">Advanced Selectors in CSS</h3> */}
 
                 <div className="mini-card-description">
-                Very convenient location, near Benchakitti Park, near BTS station.   Experienced teacher who is  sincere and very helpful.  Nice  and clean studio.
-                </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos ducimus unde cum fugit perferendis vero sunt doloremque eveniet, repellat ea atque, impedit beatae fuga consequatur quod sed praesentium iure?                </div>
 
                 <div className="author-row">
                   <div>

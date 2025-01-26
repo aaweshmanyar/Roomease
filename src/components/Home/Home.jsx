@@ -8,6 +8,9 @@ import PropertyCategories from "../Property/Property";
 import HoverTextEffect from "../Hovertext/Hovertext";
 import Gallery from '../Gallery/Gallery';
 import Footer from "../Footer/Footer";
+import Heroimg from '../../assets/Images/hero-img.jpg';
+import Findeasyimg from '../../assets/Images/findeasy.jpg';
+import FeaturesList from "../Features/Features";
 
 export default function LandingPage() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -74,7 +77,7 @@ export default function LandingPage() {
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <a
-            href="tel:+918884518010"
+            href="/list-property"
             className="flex items-center text-sm text-black hover:text-gray-600"
           >
             List your property
@@ -86,7 +89,7 @@ export default function LandingPage() {
             <Phone className="w-4 h-4 mr-2" /> +91 95XXXXXXXX
           </a>
           <a
-            href="mailto:info@zolostays.com"
+            href="mailto:info@example.com"
             className="flex items-center text-sm text-black hover:text-gray-600"
           >
             <Mail className="w-4 h-4 mr-2" /> info@example.com
@@ -98,7 +101,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12 md:py-24 relative z-10">
+      <section className="container mx-auto px-8 py-12 md:py-24 relative z-10">
       {/* Background SVG */}
       <div className="absolute inset-0  opacity-50">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute w-full h-full">
@@ -118,7 +121,7 @@ export default function LandingPage() {
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <input
-                placeholder="Find a Zolo near your place of Work/Study"
+                placeholder="Find a Room near your place of Work/Study"
                 className="border rounded-lg pl-10 pr-4 py-2 w-full text-sm focus:ring-2 focus:ring-yellow-500 focus:outline-none"
               />
             </div>
@@ -129,7 +132,7 @@ export default function LandingPage() {
         </div>
         <div className="relative h-[400px] md:h-[500px] bg-[#E8F7FF] rounded-3xl overflow-hidden shadow-xl">
           <img
-            src="https://via.placeholder.com/500"
+            src={Heroimg}
             alt="People relaxing on a yellow couch"
             className="object-cover h-full w-full"
           />
@@ -152,9 +155,9 @@ export default function LandingPage() {
             </div>
             <div className="relative h-[300px] md:h-[400px] mt-8">
               <img
-                src="https://via.placeholder.com/400"
+                src={Findeasyimg}
                 alt="Person looking through binoculars"
-                className="object-contain object-center h-full w-full"
+                className="object-contain object-left rounded-md h-full w-full"
               />
             </div>
           </div>
@@ -163,7 +166,7 @@ export default function LandingPage() {
           <div className="space-y-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800">
               Easy on the pocket,{" "}
-              <span className="text-blue-500">Easy on the mind.</span>
+              <span className="text-yellow-300">Easy on the mind.</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -203,6 +206,7 @@ export default function LandingPage() {
       <PopularOwnerProperties />
       <PropertyCategories />
       <HoverTextEffect />
+      <FeaturesList />
       <Review />
       <Gallery />
       <Footer />
